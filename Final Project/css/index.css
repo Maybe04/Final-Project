@@ -1,0 +1,542 @@
+/* 导航 */
+.nav {
+    z-index: 888;
+    position: sticky;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: url(../img//nav_back_bg_fd2505e.jpg) no-repeat center top;
+}
+
+.wrap {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+}
+
+.wrap a {
+    position: relative;
+    color: #fff;
+    width: 78px;
+    height: 70px;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.wrap .active {
+    background: url(../img//nav_bg1_d44f09d.jpg) no-repeat;
+    color: black;
+}
+
+.wrap a:hover {
+    background: url(../img//nav_bg1_d44f09d.jpg) no-repeat;
+    color: black;
+}
+
+.wrap a::after {
+    position: absolute;
+    right: -3px;
+    content: "|";
+    color: #fff;
+    font-size: 12px;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 784px;
+    overflow: hidden;
+}
+
+.banner>img {
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.logo {
+    position: absolute;
+    left: 150px;
+    top: 83px;
+    width: 77px;
+    height: 247px;
+}
+
+.logo>a {
+    display: block;
+    width: 77px;
+    height: 247px;
+    background: url(../img/200.webp) no-repeat;
+    background-size: 100%;
+}
+
+.banner-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 287px;
+    background: url(../img/banner-bottom-bg.png) repeat-x center bottom;
+}
+
+.banner-bottom .banner-wrap {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.download {
+    position: relative;
+    width: 145px;
+    height: 240px;
+    padding-top: 47px;
+    background: url(../img/index_z_203e03e.png) no-repeat;
+    text-align: center;
+}
+
+.download img {
+    width: 107px;
+}
+
+.download .line {
+    position: absolute;
+    top: 40px;
+    left: 19px;
+    animation: move 2s linear alternate infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(107px);
+    }
+}
+
+/* 主体 */
+.container {
+    width: 1180px;
+    margin: 43px auto 0;
+}
+
+/* 平安世界 */
+.world {
+    position: relative;
+    width: 100%;
+    height: 495px;
+    margin-bottom: 70px;
+}
+
+.world-title {
+    width: 54px;
+    height: 145px;
+    background: url(../img/index_z_203e03e.png);
+    background-position: -835px -532px;
+}
+
+.world-box {
+    width: 100%;
+    height: 320px;
+    background: url(../img/shishen_bg_000bc91.jpg) no-repeat center 0;
+    margin-top: 23px;
+}
+
+.world-body {
+    display: none;
+}
+
+.world-active {
+    display: block;
+}
+
+.world-img {
+    position: relative;
+    width: 940px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.world-img>a {
+    position: absolute;
+    top: 0;
+    width: 470px;
+    height: 320px;
+}
+
+.world-img>a:first-child {
+    left: 0;
+}
+
+.world-img>a:last-child {
+    right: 0;
+}
+
+.world-img>a:first-child>img {
+    position: relative;
+    top: -186px;
+    left: -140px;
+}
+
+.world-img>a:last-child img {
+    position: absolute;
+    top: -186px;
+    right: -140px;
+}
+
+/* 选项卡 */
+.world-tab {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    width: 296px;
+    height: 40px;
+    margin-left: 120px;
+    border: 2px solid #c2a060;
+}
+
+.world-tab ul {
+    width: 288px;
+    height: 32px;
+    border: 2px solid #fff;
+}
+
+.world-tab>ul li {
+    position: relative;
+    float: left;
+    width: 96px;
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.world-tab>ul li:nth-child(1):after,
+.world-tab>ul li:nth-child(2):after {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    content: '|';
+    color: #c2a060;
+}
+
+.world-tab a {
+    display: block;
+    color: black;
+}
+
+.world-tab .on a {
+    background-color: #c2a060;
+    color: #fff;
+}
+
+.world-tab li:hover a {
+    background-color: #c2a060;
+    color: #fff;
+}
+/* 游戏攻略 */
+.game {
+    width: 100%;
+    height: 510px;
+    background: url(../img/stategy_bg_4def7a7.jpg) no-repeat;
+    background-position: 0 174px;
+}
+
+.game-top {
+    width: 1180px;
+    height: 209px;
+    margin: 0 auto;
+}
+
+.game-title {
+    float: left;
+    width: 55px;
+    height: 145px;
+    background: url(../img/index_z_203e03e.png);
+    background-position: -898px -532px;
+}
+
+.game-box {
+    float: right;
+    width: 1080px;
+    height: 209px;
+}
+
+.game-box>div {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 209px;
+    margin-left: 20px;
+}
+
+.game-box>div span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 90px;
+    padding: 0 10px;
+    background: url(../img/stategy_tit_bg_3dfaee2.png);
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+    transition: all .4s ease;
+}
+
+.game-box>div span:first-of-type {
+    top: 0;
+    left: 18px;
+}
+
+.game-box>div span:last-of-type {
+    top: 22px;
+    left: 68px;
+}
+
+.game-box>div:hover span {
+    transform: translateY(-10px);
+}
+
+.game-center {
+    width: 1060px;
+    height: 44px;
+    margin-left: 120px;
+}
+
+.game-tab {
+    width: 100%;
+    height: 44px;
+    margin-top: 32px;
+}
+
+.game-tab a {
+    float: left;
+    width: 154px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.game-on a {
+    display: block;
+    background-color: #fff;
+    color: #74bd95;
+}
+
+.game-bottom {
+    width: 1058px;
+    height: 124px;
+    border: 2px solid #81c0a1;
+    border-top: 0;
+    padding: 30px 0 0 118px;
+}
+
+.game-con {
+    display: none;
+
+}
+
+.game-active {
+    display: block;
+}
+
+/* 同人手账 */
+.tongren {
+    width: 100%;
+    height: 487px;
+    margin-bottom: 70px;
+    background: url(../img/tongren_bg_4e00ea2.jpg) no-repeat 0 bottom;
+}
+
+.tongren .tongren-title {
+    float: left;
+    width: 53px;
+    height: 144px;
+    background: url(../img/index_z_203e03e.png) no-repeat -963px -532px;
+}
+
+.tongren .tongren-box {
+    float: right;
+    width: 1062px;
+    height: 456px;
+}
+
+.tongren .tongren-box .box-left {
+    float: left;
+    width: 300px;
+    height: 456px;
+    background: url(../img/tongren-1-01.jpg);
+    animation: changel 4s linear infinite alternate;
+    transition: all 0.3s;
+}
+
+.tongren .tongren-box .box-right {
+    float: right;
+    width: 720px;
+    height: 447px;
+}
+
+.tongren .tongren-box .box-right div {
+    box-sizing: border-box;
+    width: 220px;
+    height: 351px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 20px;
+    background: url(../img/tongren-2-01.jpg) no-repeat;
+    animation: changel2 2s alternate infinite;
+    transition: all 0.4s;
+    border: 1px solid transparent;
+}
+
+.tongren .tongren-box .box-right div:hover {
+    box-sizing: border-box;
+    border: 1px solid paleturquoise;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, .1);
+}
+
+@keyframes changel {
+    from {
+        background: url(../img/tongren-1-01.jpg) no-repeat;
+    }
+
+    50% {
+        background: url(../img/tongren-1-02.png) no-repeat;
+    }
+
+    to {
+        background: url(../img/tongren-1-03.jpg) no-repeat;
+    }
+}
+
+@keyframes changel2 {
+    from {
+        background: url(../img/tongren-2-01.jpg) no-repeat;
+    }
+
+    to {
+        background: url(../img/tongren-2-02.jpg) no-repeat;
+    }
+}
+
+/* 试听盛宴 */
+.shiting {
+    width: 100%;
+    height: 262px;
+    padding-bottom: 47px;
+}
+
+.shiting .shiting-title {
+    float: left;
+    width: 55px;
+    height: 146px;
+    background: url(../img/index_z_203e03e.png) no-repeat -770px -532px;
+}
+
+.shiting .shiting-box {
+    float: right;
+    width: 1090px;
+    height: 215px;
+    background: url(../img/shiting_bg_735f29c.jpg) no-repeat 0 bottom;
+}
+
+.shiting .shiting-box div {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 141px;
+    margin-left: 20px;
+}
+
+.shiting .shiting-box div .stname {
+    width: 185px;
+    height: 30px;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    background-color: #000;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.shiting .shiting-box div:nth-child(1) {
+    margin-left: 30px;
+}
+
+/* 泛娱乐 */
+.fun {
+    overflow: hidden;
+    width: 100%;
+    height: 536px;
+    margin-bottom: 70px;
+    background: url(../img/fun_bg_99effa1.jpg) no-repeat left 175px;
+}
+
+.fun .fun-title {
+    float: left;
+    width: 55px;
+    height: 140px;
+    background: url(../img/index_z_203e03e.png) no-repeat -1025px -532px;
+}
+
+.fun .fun-box {
+    position: relative;
+    float: right;
+    width: 1060px;
+    height: 536px;
+}
+
+.fun .fun-box .fun-container {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 2300px;
+    height: 536px;
+}
+
+.fun .fun-box .fun-container div {
+    width: 220px;
+    height: 536px;
+    float: left;
+    margin-right: 10px;
+    transition: all 0.4s;
+}
+
+.fun .fun-box .fun-container div:hover {
+    transform: translateY(-20px);
+}
+
+/* 底部 */
+.bottom {
+    position: relative;
+    width: 100%;
+    height: 927px;
+    background: url(../img/bottom_bg_b30cb11.png) center no-repeat;
+    margin-top: -50px;
+}
+
+.bottom-logo {
+    position: absolute;
+    top: 346px;
+    left: 320px;
+    width: 71px;
+    height: 224px;
+    background: url(../img/75.webp);
+}
+
+.bottom-ewm {
+    z-index: 20;
+    position: absolute;
+    right: 120px;
+    top: 220px;
+    width: 356px;
+    height: 354px;
+    background: url(../img/bott_ewm_853021b.png);
+}
